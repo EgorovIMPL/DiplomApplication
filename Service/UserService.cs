@@ -16,18 +16,6 @@ public class UserService
 
     public async Task Create(CreateUserDto userDto)
     {
-        if (userDto.SteamId == 0)
-        {
-            return;
-        }
         
-        var user = new User()
-        {
-            UserName = userDto.Name,
-            Email = userDto.Email,
-            P
-        }
-
-        _databaseContext.Users.Add(user);
     }
 }
